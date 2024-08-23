@@ -1,3 +1,7 @@
+*{
+    font-family: Verdana, sans-serif;
+}
+
 .navbar{
     display: flex;
     justify-content: space-between;
@@ -12,11 +16,21 @@
     justify-content: space-between;
 }
 
-.item{
-    margin-right: 1em;
-    color: #FFF;
+.item {
+    margin: 0 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: white;
+    transition: transform 0.2s ease-in-out, background-color 0.3s ease;
 }
+  
+.item:hover {
+    background-color: #0056b3; /* Escolha a cor que combina com a navbar */
+    transform: scale(1.1); /* Aumenta o tamanho em 10% */
+    border-radius: 5px;
+}
+  
 
 .logo{
-    width: 100px
+    width: 100px;
 }
