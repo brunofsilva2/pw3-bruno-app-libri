@@ -25,8 +25,8 @@
 }
   
 .item:hover {
-    background-color: #0056b3; /* Escolha a cor que combina com a navbar */
-    transform: scale(1.1); /* Aumenta o tamanho em 10% */
+    background-color: #0056b3;
+    transform: scale(1.1);
     border-radius: 5px;
 }
   
