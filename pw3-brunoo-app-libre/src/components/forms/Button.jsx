@@ -1,17 +1,12 @@
+import React from 'react'
 import styles from './Button.module.css'
 
-function Button ({rotulo}){
-
-    return(
-
+const Button = ({rotulo}) => {
+    return (
         <div className={styles.button}>
-
-            <button>{rotulo}
-
-            </button>
+            <button>{rotulo}</button>
         </div>
     )
 }
-
 
 export default Button
