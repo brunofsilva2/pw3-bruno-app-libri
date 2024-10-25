@@ -4,8 +4,11 @@ import style from './CreateBooks.module.css'
 import Input from "../forms/Input";
 import Select from "../forms/Select";
 import Button from "../forms/Button";
+import { useNavigate } from "react-router-dom";
 
 const Createbooks = () => {
+
+    const navigate = useNavigate()
 
         /* STATE DE DADOS QUE VAI ARMAZENAR O OBJETO JSON DE LIVRO */
         const [book, setBook] = useState({})
@@ -70,7 +73,7 @@ const Createbooks = () => {
         .then(
                 (data)=>{
                 console.log(data);
-                // navigate('/livros',{state:'LIVRO CADASTRADO COM SUCESSO!'});
+                navigate('/listBooks',{state:'LIVRO CADASTRADO COM SUCESSO!'});
                 }
         )
         .catch(
